@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3enraya</string>
+    <string name="titulo">3 en Raya</string>
+    <string name="unJugador">Un jugador</string>
+    <string name="dosJugadores">Dos jugadores</string>
+    <string name="facil">Fácil</string>
+    <string name="medio">Medio</string>
+    <string name="dificil">Difícil</string>
+    <string name="casillaDesc">Casilla tres en raya</string>
+</resources>

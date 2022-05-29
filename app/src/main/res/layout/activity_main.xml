@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondopikachu"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_pantalla"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="0.3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/idTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo"
+                android:textColor="#5D4037" />
+
+            <Button
+                android:id="@+id/btn1Jugador"
+                style="@style/boton"
+                android:background="@color/btnFondo"
+                android:minHeight="48dp"
+                android:onClick="aJugar"
+                android:text="@string/unJugador" />
+
+            <RadioGroup
+                android:id="@+id/rdgrDificultad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbFacil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/facil"
+                    android:textColor="#37474F"
+                    tools:ignore="TextContrastCheck" />
+
+                <RadioButton
+                    android:id="@+id/rbMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medio"
+                    android:textColor="#37474F"
+                    tools:ignore="TextContrastCheck"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbDificil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/dificil"
+                    android:textColor="#1B5E20"
+                    tools:ignore="TextContrastCheck" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn2Jugadores"
+                style="@style/boton"
+                android:minHeight="48dp"
+                android:text="@string/dosJugadores"
+                android:onClick="aJugar"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="0.4" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <ImageView
+                android:id="@+id/imgA1"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/aspa" />
+
+            <ImageView
+                android:id="@+id/imgA2"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/circulo" />
+
+            <ImageView
+                android:id="@+id/imgA3"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/circulo" />
+
+            <ImageView
+                android:id="@+id/imgB1"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/aspa" />
+
+            <ImageView
+                android:id="@+id/imgB2"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/blanco" />
+
+            <ImageView
+                android:id="@+id/imgB3"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/blanco" />
+
+            <ImageView
+                android:id="@+id/imgC1"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/aspa" />
+
+            <ImageView
+                android:id="@+id/imgC2"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/blanco" />
+
+            <ImageView
+                android:id="@+id/imgC3"
+                style="@style/casilla"
+                android:contentDescription="@string/casillaDesc"
+                app:srcCompat="@drawable/blanco" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

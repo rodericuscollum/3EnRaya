@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TIC, TAC, TOE</string>
+    <string name="titulo">TIC, TAC, TOE</string>
+    <string name="unJugador">One Player</string>
+    <string name="dosJugadores">Two players</string>
+    <string name="facil">easy</string>
+    <string name="medio">medium</string>
+    <string name="dificil">Difícult</string>
+    <string name="casillaDesc">Tic, tac, toe box</string>
+</resources>
